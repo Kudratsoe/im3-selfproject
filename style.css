@@ -60,3 +60,54 @@ ul {
     border: 1px solid #ED1C24;
     cursor: pointer;
 }
+#search {
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    color: #ED1C24;
+    border: 1px solid #ED1C24;
+    cursor: pointer;
+}
+#main-picture {
+    img { 
+width: fit-content;
+height: fit-content;
+    }
+}
+#product-catalog-items {
+    display: flex;
+    justify-content:space-between;
+    margin-right: 40px;
+}
+#product-catalog-cari {
+    display: flex;
+    justify-content: center;
+}
+#product-catalog-sim {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+    cursor: pointer;
+}
+#product-catalog-aktivasi {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+    cursor: pointer;
+}
+#product-catalog-beli {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+    cursor: pointer;
+}
+#product-catalog-isiulang {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+    cursor: pointer;
+}

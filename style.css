@@ -1,4 +1,4 @@
-* {  
+*⁠{  
     font-family: "Roboto", sans-serif;
 }
 #top-bar {
@@ -7,6 +7,8 @@
     display: flex;
     justify-content: space-between;
     margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 #top-bar-left {
@@ -17,7 +19,8 @@
 #top-bar-right {
     display: flex;
     justify-content: right;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
 }
 #bahasa {
     color: #ed2324 ;
@@ -29,25 +32,29 @@ ul {
     color: #ed2324;
 }
 #top-bar ul li {
-    /* width: fit-content ; */
     display: inline-block; 
     margin-left: 10px;
 }
-#navigation-bar {
+#navigation-bar      {
+    color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-left: 30px;
     margin-right: 30px;
     align-items: center;
+    cursor: pointer;
 }
 #navigation-bar-left {
-    display: flex;
+    display: flex;  
     gap: 20px;
 }
 #navigation-bar-right {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+#navigation-bar ul li:hover {
+    color: #ed2324;
 }
 #button-masuk {
     background-color: #ED1C24;
@@ -70,8 +77,7 @@ ul {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border-color: rgb(247, 245, 245);
-    color: #ED1C24;
+    border:none ;
     cursor: pointer;
 }
 #main-picture {
@@ -116,4 +122,36 @@ height: fit-content;
     align-items: center;
     gap:20px;
     cursor: pointer;
+}
+#content-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 100px;
+    gap: 50px;
+}
+#button-content {
+    background-color: #ED1C24;
+    padding: 10px 40px;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#content-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 100px;
+    gap: 50px;
+}
+#content-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 100px;
+    gap: 50px;
 }

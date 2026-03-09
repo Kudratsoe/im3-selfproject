@@ -9,10 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        img {
+        border-radius: 30px;
+        }
+    </style>
   </head>
 </head>
 <body>
-    <div class="container mb-5 mt-2">
+    <div class="container mb-4 mt-3">
         <header>
             <div id="top-bar">
                 <ul id="top-bar-left">
@@ -26,9 +31,27 @@
                         </svg>
                         Gerai Online
                     </li>
-                    <li>Bantuan</li>
-                    <li>Blog</li>
-                    <li>Gerai Lokasi</li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                        </svg>
+                        Bantuan
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text" viewBox="0 0 16 16">
+                        <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                        <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                        </svg>    
+                        Blog
+                    </li>
+                    <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>    
+                        Gerai Lokasi
+                    </li>
                     <li><span id="bahasa">ID</span> | EN</li>
                 </ul>
             </div>
@@ -60,8 +83,23 @@
             </div>
         </header>
     </div>
-    <div id="main-picture">
-        <img src="https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/638325439051165310.webp" alt="main picture">
+    <div id="main-picture-carousel" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#main-picture-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#main-picture-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#main-picture-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="false">
+                <img src="https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/639063193495573249.jpg" class="d-block w-100" alt="Main-picture-1">
+            </div>
+            <div class="carousel-item" data-bs-interval="false">
+                 <img src="https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/desktop_639077151849709604.webp" class="d-block w-100" alt="Main-picture-2">
+            </div>
+            <div class="carousel-item" data-bs-interval="false">
+                 <img src="https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/desktop_639010605285617211.webp" class="d-block w-100" alt="Main-picture-3">
+            </div>
+        </div>    
     </div>
     <div class="container my-5">
         <div id="product-catalog">
@@ -91,6 +129,63 @@
     
         </div>  
     </div>
+    <div class="container my-5"> 
+        <div id="content-one">
+            <Ul>
+                <li>
+                    <h1>Provider Internet Seluler Terbaik Dengan Solusi Simpel IM3</h1>
+                </li>
+                <li>
+                    <p>
+                    Sebagai provider internet terbaik untuk Indonesia, IM3 bikin semuanya lebih simpel, mudah, kapan aja, di mana aja. Mulai paket Freedom Internet dengan 100% kuota utama didukung jaringan kuat, luas, dan stabil, sampai paket data SimpelRoam buat koneksi internet di luar negeri.
+                    </p>
+                </li>
+                <li>
+                    <button id="button-content">
+                        Selengkapnya
+                    </button>
+                </li>
+            </Ul>
+            <img src="https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/638989957370052809.png" alt="picture-content-1" width="507" height="285.183" >
+        </div>
+        <div id="content-two">
+            <img src="https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/638990440992650567.webp" alt="picture-content-2" width="507" height="285.183" >
+            <Ul>
+                <li>
+                    <h1>Koneksi Internet & Jaringan 5G Aman dengan Teknologi AIvolusi 5G</h1>
+                </li>
+                <li>
+                    <p>
+                    Indosat Ooredoo Hutchison menghadirkan AIvolusi 5G, teknologi yang menggabungkan jaringan internet 5G dengan kecanggihan AI untuk memberikan pengalaman digital yang lebih nyaman dan aman dari ganguan nomor modus bagi setiap pelanggan paket data internet IM3.
+                    </p>
+                </li>
+                <li>
+                    <button id="button-content">
+                        Selengkapnya
+                    </button>
+                </li>
+            </Ul>
+        </div>
+        <div id="content-three">
+            <Ul>
+                <li>
+                    <h1>Nomor Modus No More dengan IM3 SATSPAM - Anti Spam & Scam</h1>
+                </li>
+                <li>
+                    <p>
+                    Perkenalkan IM3 SATSPAM (Satuan Anti Scam dan Spam) fitur proteksi real-time dari Indosat IM3 yang secara otomatis mendeteksi, menyaring, dan memperingatkan dari potensi penipuan lewat SMS maupun panggilan telepon nomor modus tidak dikenal.
+                    </p>
+                </li>
+                <li>
+                    <button id="button-content">
+                        Selengkapnya
+                    </button>
+                </li>
+            </Ul>
+            <img src="https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/638989976683046930.jpg" alt="picture-content-3" width="507" height="285.183" >
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

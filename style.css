@@ -7,12 +7,17 @@
     display: flex;
     justify-content: space-between;
     margin-right: 30px;
+    cursor: pointer;
 }
 #top-bar-left {
-    text-align: left ;
+    display: flex;
+    justify-content: left;
+    gap: 30px;
 }
 #top-bar-right {
-    text-align:right;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
 }
 #bahasa {
     color: #ed2324 ;
@@ -61,11 +66,12 @@ ul {
     cursor: pointer;
 }
 #search {
-    background-color: white;
-    padding: 10px 40px;
-    border-radius: 30px;
+    background-color: rgb(247, 245, 245);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border-color: rgb(247, 245, 245);
     color: #ED1C24;
-    border: 1px solid #ED1C24;
     cursor: pointer;
 }
 #main-picture {
